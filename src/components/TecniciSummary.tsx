@@ -88,7 +88,7 @@ export default function TecniciSummary() {
   const [showExportModal, setShowExportModal] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/commesse")
+    fetch("http://cosvm12.coversystem.it:4000/api/commesse")
       .then((res) => res.json())
       .then((data) => {
         setCommesse(data);

@@ -78,7 +78,7 @@ export default function CommessaList() {
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/commesse")
+    fetch("http://cosvm12.coversystem.it:4000/api/commesse")
       .then((res) => res.json())
       .then((data) => {
         const enriched = enrichCommesse(data);
