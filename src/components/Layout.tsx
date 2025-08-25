@@ -14,13 +14,13 @@ export default function Layout({ children }: Props) {
   const navItems = [
     { path: "/commesse", label: "Commesse", icon: <Folder size={18} /> },
     { path: "/tecnici", label: "Tecnici", icon: <Users size={18} /> },
-    { path: "/survey", label: "Business Happiness", icon: <Smile size={18} /> },
+   // { path: "/survey", label: "Business Happiness", icon: <Smile size={18} /> },
   ];
 
   const titleMap: Record<string, string> = {
     "/commesse": "📋 REPORT COMMESSE",
     "/tecnici": "📊 RIEPILOGO TECNICI PER BEEGREEN",
-    "/survey": "😊 BUSINESS HAPPINESS",
+    //"/survey": "😊 BUSINESS HAPPINESS",
   };
 
   const pageTitle = titleMap[location.pathname] ?? "🔍 Applicazione";
