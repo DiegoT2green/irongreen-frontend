@@ -6,7 +6,13 @@ import ProgressBar from "./ProgressBar";
 interface Props {
   commessa: Commessa;
 }
-
+const statoLabels: Record<number, string> = {
+  0: "Inserita",
+  1: "Aperta",
+  2: "Chiusa",
+  3: "Fatturata",
+  4: "In Lavorazione",
+};
 export default function CommessaRow({ commessa }: Props) {
   const [expanded, setExpanded] = useState(false);
 
@@ -37,7 +43,7 @@ export default function CommessaRow({ commessa }: Props) {
               <span className="font-bold">Fine:</span>{" "}
               <span className="font-semibold">{commessa.dataFine}</span> |{" "}
               <span className="font-bold">Stato:</span>{" "}
-              <span className="font-semibold italic">{commessa.stato}</span>
+              <span className="font-semibold italic">{statoLabels[Number(commessa.stato)] ?? "Sconosciuto"}</span>
             </p>
           </div>
 
