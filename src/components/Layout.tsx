@@ -51,9 +51,13 @@ export default function Layout({ children }: Props) {
           <div className="p-6 h-full flex flex-col">
             {/* Info utente */}
             <div className="mb-8 text-center">
-              <div className="w-20 h-20 bg-white rounded-full mx-auto mb-3 shadow" />
-              <h2 className="font-bold">Utente</h2>
-              <p className="text-sm text-[#2a4d50]/80">utente@email.com</p>
+              <img
+                src="/T2green.png"
+                alt="T2GREEN"
+                className="w-20 h-20 rounded-full mx-auto mb-3 shadow object-cover ring-2 ring-white"
+              />
+              <h2 className="font-bold">Admin</h2>
+              <p className="text-sm text-[#2a4d50]/80">admin@t2green.biz</p>
             </div>
 
             {/* Navigazione */}
